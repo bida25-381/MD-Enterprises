@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Form</title>
+</head>
+<body>
+  <div class="card">
+    <h2>Share your feedback</h2>
+    <p class="subtitle">We'd love to hear what you think.</p>
+
+    <div class="row">
+      <div>
+        <label>Name</label>
+        <input type="text" placeholder="Pnamed Slickback" />
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" placeholder="Pnamedslickback@example.com" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Category</label>
+      <select>
+        <option value="">Select a category</option>
+        <option>General feedback</option>
+        <option>Bug report</option>
+        <option>Feature request</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Message</label>
+      <textarea rows="4" placeholder="Tell us what you think..."></textarea>
+    </div>
+
+    <button onclick="document.getElementById('confirm').style.display='block'">Submit feedback</button>
+    <p id="confirm">Thanks for your feedback!</p>
+  </div>
+</body>
+</html>
